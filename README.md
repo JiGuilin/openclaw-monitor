@@ -2,7 +2,9 @@
 
 > 实时系统监控仪表盘 - 跨平台桌面应用
 
-![OpenClaw Monitor](screenshot-v2.jpg)
+![OpenClaw Monitor Banner](og-image.png)
+
+![Dashboard](screenshot-v2.jpg)
 
 ## ✨ 功能特性
 
@@ -193,6 +195,12 @@ if (timeLabels.value.length > 30) {
 ## 📄 许可证
 
 MIT License
+
+## 📊 项目状态
+
+- ✅ 核心功能完成
+- 🔄 等待对接真实 OpenClaw API
+- 📦 待打包发布（Windows/Mac/Linux）
 
 ---
 
