@@ -132,6 +132,9 @@ fn get_system_info() -> Result<SystemInfo, String> {
     // 获取磁盘使用率
     let disk = get_disk_usage().unwrap_or(52.0);
     
+    // 记录系统信息日志
+    eprintln!("[System] CPU: {:.1}%, Memory: {:.1}%, Disk: {:.1}%", cpu, memory, disk);
+    
     Ok(SystemInfo {
         cpu,
         memory,

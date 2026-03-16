@@ -14,12 +14,24 @@
     "allowlist": {
       "all": false,
       "shell": {
-        "all": false,
-        "open": true
+        "all": true,
+        "open": true,
+        "exec": true
+      },
+      "http": {
+        "all": true,
+        "request": true,
+        "scope": ["http://*", "https://*"]
       }
     },
     "bundle": {
       "active": true,
+      "category": "DeveloperTool",
+      "copyright": "MIT License",
+      "deb": {
+        "depends": []
+      },
+      "externalBin": [],
       "icon": [
         "icons/32x32.png",
         "icons/128x128.png",
@@ -28,20 +40,41 @@
         "icons/icon.ico"
       ],
       "identifier": "com.openclaw.monitor",
-      "targets": "all"
+      "longDescription": "OpenClaw 实时系统监控仪表盘 - 监控 Gateway、Session、系统资源和 Cron 任务状态",
+      "macOS": {
+        "entitlements": null,
+        "exceptionDomain": "",
+        "frameworks": [],
+        "providerShortName": null,
+        "signingIdentity": null
+      },
+      "resources": [],
+      "shortDescription": "OpenClaw 系统监控",
+      "targets": ["deb", "appimage", "msi", "nsis", "dmg", "app"],
+      "windows": {
+        "certificateThumbprint": null,
+        "digestAlgorithm": "sha256",
+        "timestampUrl": ""
+      }
     },
     "security": {
       "csp": null
     },
+    "updater": {
+      "active": false
+    },
     "windows": [
       {
         "fullscreen": false,
-        "height": 800,
+        "height": 900,
         "resizable": true,
         "title": "OpenClaw Monitor",
-        "width": 1200,
-        "minWidth": 800,
-        "minHeight": 600
+        "width": 1400,
+        "minWidth": 1000,
+        "minHeight": 700,
+        "center": true,
+        "decorations": true,
+        "transparent": false
       }
     ]
   }
